@@ -104,3 +104,21 @@ main {
   opacity: 1;
 }
 
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px; /* Reducimos el padding del header en dispositivos móviles */
+  }
+  
+  .dropdown {
+    margin: 10px auto; /* Centramos el botón "Categoría" en dispositivos móviles */
+  }
+  
+  main {
+    padding-top: 100px; /* Ajustamos el padding-top del main en dispositivos móviles */
+  }
+  
+  .catalogo li {
+    margin: 10px; /* Reducimos el margen de los elementos en dispositivos móviles */
+  }
+}
+
