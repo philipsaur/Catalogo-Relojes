@@ -7,22 +7,33 @@ body {
 header {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 10px 20px; /* Reducimos el padding para hacer el header más delgado */
   text-align: center;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999; /* Asegura que el header esté por encima del resto del contenido */
 }
 
 .dropbtn {
   background-color: #333;
   color: #fff;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 8px 12px; /* Reducimos el tamaño del botón */
+  font-size: 14px; /* Reducimos el tamaño del texto */
   border: none;
   cursor: pointer;
+  border-radius: 5px; /* Añadimos bordes redondeados */
+  transition: background-color 0.3s; /* Agregamos transición para cambiar de color al pasar el cursor */
+}
+
+.dropbtn:hover {
+  background-color: #555; /* Cambiamos el color de fondo al pasar el cursor */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 10px auto; /* Centramos el botón horizontalmente */
 }
 
 .dropdown-content {
@@ -46,6 +57,10 @@ header {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+main {
+  padding-top: 10%; /* Ajustamos el padding-top para evitar que el contenido se solape con el header */
 }
 
 .catalogo {
@@ -88,3 +103,4 @@ header {
   visibility: visible;
   opacity: 1;
 }
+
