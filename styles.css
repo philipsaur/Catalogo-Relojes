@@ -7,7 +7,7 @@ body {
 header {
   background-color: #333;
   color: #fff;
-  padding: 10px 20px; /* Reducimos el padding para hacer el header más delgado */
+  padding: 10px; /* Reducimos el padding para hacer el header más delgado */
   text-align: center;
   position: fixed;
   width: 100%;
@@ -15,11 +15,15 @@ header {
   z-index: 999; /* Asegura que el header esté por encima del resto del contenido */
 }
 
+h1 {
+  margin: 0;
+}
+
 .dropbtn {
-  background-color: #333;
+  background-color: #4CAF50; /* Cambiamos el color de fondo del botón */
   color: #fff;
-  padding: 8px 12px; /* Reducimos el tamaño del botón */
-  font-size: 14px; /* Reducimos el tamaño del texto */
+  padding: 15px 20px; /* Aumentamos el tamaño del botón */
+  font-size: 16px; /* Aumentamos el tamaño del texto */
   border: none;
   cursor: pointer;
   border-radius: 5px; /* Añadimos bordes redondeados */
@@ -27,13 +31,12 @@ header {
 }
 
 .dropbtn:hover {
-  background-color: #555; /* Cambiamos el color de fondo al pasar el cursor */
+  background-color: #45a049; /* Cambiamos el color de fondo al pasar el cursor */
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
-  margin: 10px auto; /* Centramos el botón horizontalmente */
 }
 
 .dropdown-content {
@@ -60,7 +63,7 @@ header {
 }
 
 main {
-  padding-top: 10%; /* Ajustamos el padding-top para evitar que el contenido se solape con el header */
+  padding-top: 120px; /* Ajustamos el padding-top para evitar que el contenido se solape con el header y se vea la primera imagen */
 }
 
 .catalogo {
@@ -106,15 +109,12 @@ main {
 
 @media only screen and (max-width: 600px) {
   header {
-    padding: 10px; /* Reducimos el padding del header en dispositivos móviles */
-  }
-  
-  .dropdown {
-    margin: 10px auto; /* Centramos el botón "Categoría" en dispositivos móviles */
+    max-width: 90%; /* Establecemos un ancho máximo para centrar el header */
+    margin: auto; /* Centramos horizontalmente */
   }
   
   main {
-    padding-top: 100px; /* Ajustamos el padding-top del main en dispositivos móviles */
+    padding-top: 200px; /* Ajustamos el padding-top del main en dispositivos móviles */
   }
   
   .catalogo li {
