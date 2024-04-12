@@ -7,13 +7,15 @@ body {
 header {
   background-color: #333;
   color: #fff;
-  padding: 10px; /* Reducimos el padding para hacer el header más delgado */
+  padding: 10px;
   text-align: center;
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 999; /* Asegura que el header esté por encima del resto del contenido */
+  z-index: 999;
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
+
 
 h1 {
   margin: 0;
