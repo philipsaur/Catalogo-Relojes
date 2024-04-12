@@ -10,11 +10,12 @@ header {
   padding: 10px;
   text-align: center;
   position: fixed;
-  width: 100%;
+  width: calc(100% - 20px); /* Restamos el doble del padding del ancho total */
+  max-width: 100%; /* Establecemos un ancho máximo del 100% */
   top: 0;
   z-index: 999;
-  overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
+
 
 
 h1 {
@@ -123,4 +124,14 @@ main {
     margin: 10px; /* Reducimos el margen de los elementos en dispositivos móviles */
   }
 }
+
+
+
+
+
+
+
+
+
+
 
