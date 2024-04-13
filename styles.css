@@ -1,40 +1,40 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+h1 {
+  margin: 0;
+}
+
+/* Estilos del encabezado */
 header {
   background-color: #333;
   color: #fff;
   padding: 10px;
   text-align: center;
   position: fixed;
-  width: calc(100% - 20px); /* Restamos el doble del padding del ancho total */
-  max-width: 100%; /* Establecemos un ancho máximo del 100% */
+  width: calc(100% - 20px);
+  max-width: 100%;
   top: 0;
   z-index: 999;
 }
 
-
-
-h1 {
-  margin: 0;
-}
-
 .dropbtn {
-  background-color: #4CAF50; /* Cambiamos el color de fondo del botón */
+  background-color: #4CAF50;
   color: #fff;
-  padding: 15px 20px; /* Aumentamos el tamaño del botón */
-  font-size: 16px; /* Aumentamos el tamaño del texto */
+  padding: 15px 20px;
+  font-size: 16px;
   border: none;
   cursor: pointer;
-  border-radius: 5px; /* Añadimos bordes redondeados */
-  transition: background-color 0.3s; /* Agregamos transición para cambiar de color al pasar el cursor */
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .dropbtn:hover {
-  background-color: #45a049; /* Cambiamos el color de fondo al pasar el cursor */
+  background-color: #45a049;
 }
 
 .dropdown {
@@ -65,8 +65,9 @@ h1 {
   display: block;
 }
 
+/* Estilos del contenido principal */
 main {
-  padding-top: 120px; /* Ajustamos el padding-top para evitar que el contenido se solape con el header y se vea la primera imagen */
+  padding-top: 120px;
 }
 
 .catalogo {
@@ -81,7 +82,21 @@ main {
   margin: 20px;
   width: 250px;
   text-align: center;
-  position: relative; /* Para posicionar el tooltip */
+  position: relative;
+}
+
+.catalogo li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.catalogo li h2 {
+  margin: 10px 0;
+}
+
+.catalogo li p {
+  margin: 5px 0;
+  color: #777;
 }
 
 .catalogo img {
@@ -90,40 +105,43 @@ main {
 
 .catalogo .tooltip {
   visibility: hidden;
-  width: 120px;
+  width: 200px;
   background-color: #333;
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 10px;
   position: absolute;
   z-index: 1;
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, visibility 0s linear 0.3s;
 }
 
 .catalogo li:hover .tooltip {
   visibility: visible;
   opacity: 1;
+  transition: opacity 0.3s, visibility 0s;
 }
 
+/* Estilos responsivos */
 @media only screen and (max-width: 600px) {
   header {
-    max-width: 90%; /* Establecemos un ancho máximo para centrar el header */
-    margin: auto; /* Centramos horizontalmente */
+    max-width: 90%;
+    margin: auto;
   }
-  
+
   main {
-    padding-top: 200px; /* Ajustamos el padding-top del main en dispositivos móviles */
+    padding-top: 200px;
   }
-  
+
   .catalogo li {
-    margin: 10px; /* Reducimos el margen de los elementos en dispositivos móviles */
+    margin: 10px;
   }
 }
+
 
 
 
