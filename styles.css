@@ -126,11 +126,22 @@ main {
   transition: opacity 0.3s, visibility 0s;
 }
 
-/* Estilos responsivos */
+/* Ajustes para la descripción */
+.descripcion {
+  margin-top: 80px; /* Agrega un margen superior para dejar espacio para el encabezado */
+  padding: 20px; /* Añade un relleno para que la descripción no quede pegada a los bordes */
+  background-color: #f9f9f9; /* Agrega un color de fondo para resaltar la descripción */
+  border-bottom: 1px solid #ddd; /* Añade una línea divisoria debajo de la descripción */
+}
+
+.descripcion p {
+  margin: 10px 0; /* Espacio entre cada párrafo de la descripción */
+}
+
+/* Ajustes responsivos */
 @media only screen and (max-width: 600px) {
-  header {
-    max-width: 90%;
-    margin: auto;
+  .descripcion {
+    margin-top: 120px; /* Ajusta el margen superior para dispositivos móviles */
   }
 
   main {
@@ -141,6 +152,21 @@ main {
     margin: 10px;
   }
 }
+
+.back-btn {
+  background-color: #6c61aa;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #555;
+}
+
 
 
 
