@@ -68,6 +68,8 @@ header {
 /* Estilos del contenido principal */
 main {
   padding-top: 120px;
+  display: flex;
+  justify-content: center; /* Centra los elementos en el eje horizontal */
 }
 
 .catalogo {
@@ -167,15 +169,8 @@ main {
   background-color: #555;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* Estilos para los videos */
+.catalogo video {
+  max-width: 100%;
+  height: auto;
+}
