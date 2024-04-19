@@ -143,7 +143,7 @@ main {
 /* Ajustes responsivos */
 @media only screen and (max-width: 600px) {
   .descripcion {
-    margin-top: 120px; /* Ajusta el margen superior para dispositivos móviles */
+    margin-top: 200px; /* Ajusta el margen superior para dispositivos móviles */
   }
 
   main {
