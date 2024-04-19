@@ -147,7 +147,7 @@ main {
   }
 
   main {
-    padding-top: 150px;
+    padding-top: 100px;
   }
 
   .catalogo li {
@@ -171,6 +171,6 @@ main {
 
 /* Estilos para los videos */
 .catalogo video {
-  max-width: 50%;
+  max-width: 75%;
   height: auto;
 }
