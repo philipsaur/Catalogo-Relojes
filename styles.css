@@ -142,35 +142,24 @@ main {
 
 /* Ajustes responsivos */
 @media only screen and (max-width: 600px) {
-  .descripcion {
-    margin-top: 200px; /* Ajusta el margen superior para dispositivos móviles */
+  header {
+    position: static; /* Cambia la posición a estática para que no se superponga el contenido */
+    background-color: rgba(51, 51, 51, 0.8); /* Añade un fondo semi-transparente al encabezado para diferenciarlo */
+  }
+
+  h1 {
+    margin-top: 20px; /* Añade un margen superior al título para evitar que se solape con el encabezado */
   }
 
   main {
-    padding-top: 90px;
+    padding-top: 50px; /* Reduce el espacio superior del contenido principal */
   }
 
   .catalogo li {
     margin: 10px;
   }
-}
 
-.back-btn {
-  background-color: #6c61aa;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-right: 10px;
-  transition: background-color 0.3s;
-}
-
-.back-btn:hover {
-  background-color: #555;
-}
-
-/* Estilos para los videos */
-.catalogo video {
-  max-width: 95%;
-  height: auto;
+  .descripcion {
+    margin-top: 10px; /* Reduce el margen superior de la descripción */
+  }
 }
